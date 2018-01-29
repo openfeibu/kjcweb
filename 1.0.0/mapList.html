@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui"><meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta content="telephone=no" name="format-detection" />
+  <!-- uc强制竖屏 -->
+  <meta name="screen-orientation" content="portrait">
+  <!-- UC应用模式 -->
+  <meta name="browsermode" content="application">
+  <!-- QQ强制竖屏 -->
+  <meta name="x5-orientation" content="portrait">
+  <!-- QQ应用模式 -->
+  <meta name="x5-page-mode" content="app">
+  <!-- UC禁止放大字体 -->
+  <meta name="wap-font-scale" content="no">
+  <title>提交订单</title>
+  <meta name="Keywords" content="" />
+  <meta name="Description" content="" />
+  <link rel="apple-touch-icon-precomposed" href="./icon.png" />
+  <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/weui.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/weui.min.js"></script>
+  <script type="text/javascript" src="js/config.js"></script>
+  <script type="text/javascript" src="js/controller.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <!-- wx -->
+  <script type="text/javascript" src="../js/jweixin-1.2.0.js"></script>
+
+</head>
+
+<body ontouchstart>
+<div class="shop_map">
+  <div class="addMap" onclick="replaceLocation('addMap.html')">
+    添加新地址
+  </div>
+  <div class="shopMap">
+    <div class="noPro" >
+      请先设置收货地址
+    </div>
+    <ul>
+      <li class="clearfix">
+        <div class="orderDetail_address">
+          <div class="orderDetail_address_con">
+            <p><span>王小二</span>13632100000</p>
+            <p>广州市增城区中新镇风光路001号</p>
+          </div>
+        </div>
+        <div class="map_delete"></div>
+      </li>
+      <li class="clearfix active">
+        <div class="orderDetail_address">
+          <div class="orderDetail_address_con">
+            <p><span>王小二</span>13632100000</p>
+            <p>广州市增城区中新镇风光路001号</p>
+          </div>
+        </div>
+        <div class="map_delete"></div>
+      </li>
+      <li class="clearfix">
+        <div class="orderDetail_address">
+          <div class="orderDetail_address_con">
+            <p><span>王小二</span>13632100000</p>
+            <p>广州市增城区中新镇风光路001号</p>
+          </div>
+        </div>
+        <div class="map_delete"></div>
+      </li>
+      <li class="clearfix">
+        <div class="orderDetail_address">
+          <div class="orderDetail_address_con">
+            <p><span>王小二</span>13632100000</p>
+            <p>广州市增城区中新镇风光路001号</p>
+          </div>
+        </div>
+        <div class="map_delete"></div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
+
+<script>
+  $(".shopMap .orderDetail_address").on("click",function(){
+    var i = $(this).index(".shopMap .orderDetail_address");
+    $(".shopMap .orderDetail_address").eq(i).parents("li").addClass("active").siblings("li").removeClass("active");
+  })
+  $(".map_delete").on("click",function(){
+    var that = $(this);
+    $.confirm({
+      text: '是否删除？',
+      onOK: function () {
+        //点击确认
+        that.parents("li").fadeOut(200);
+      },
+      onCancel: function () {
+      }
+    });
+  })
+</script>

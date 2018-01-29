@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui"><meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta content="telephone=no" name="format-detection" />
+  <!-- uc强制竖屏 -->
+  <meta name="screen-orientation" content="portrait">
+  <!-- UC应用模式 -->
+  <meta name="browsermode" content="application">
+  <!-- QQ强制竖屏 -->
+  <meta name="x5-orientation" content="portrait">
+  <!-- QQ应用模式 -->
+  <meta name="x5-page-mode" content="app">
+  <!-- UC禁止放大字体 -->
+  <meta name="wap-font-scale" content="no">
+  <title>筷叫餐</title>
+  <meta name="Keywords" content="" />
+  <meta name="Description" content="" />
+  <link rel="apple-touch-icon-precomposed" href="./icon.png" />
+  <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/weui.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/weui.min.js"></script>
+  <script type="text/javascript" src="js/config.js"></script>
+  <script type="text/javascript" src="js/controller.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <!-- wx -->
+  <script type="text/javascript" src="../js/jweixin-1.2.0.js"></script>
+
+</head>
+
+<body ontouchstart>
+<div class="search">
+  <div class="weui-search-bar weui-search-bar_focusing fb-position-fixed" id="searchBar">
+    <form class="weui-search-bar__form">
+      <div class="weui-search-bar__box">
+        <i class="weui-icon-search fb-inlineBlock"></i>
+        <input type="search" class="weui-search-bar__input fb-inlineBlock" id="searchInput" placeholder="搜索" required="">
+        <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+      </div>
+      <label class="weui-search-bar__label" id="searchText">
+        <i class="weui-icon-search"></i>
+        <span>搜索</span>
+      </label>
+    </form>
+    <a href="javascript:" class="" id="searchCancel">搜索</a>
+  </div>
+  <div class='noPro'>没有相关的数据</div>
+  <div class="shop_group">
+    <div class="shop_group_list">
+      <div class="shop_group_item">
+        <a href="">
+          <div class="shop_state shop_state_ing"></div>
+          <div class="img"><img src="images/ic_coupon_2.png" alt=""></div>
+          <div class="text">
+            <div class="shop_name">正新鸡排（中新店）</div>
+            <div class="shop_nums">销量325份</div>
+            <div class="shop_decs fb-clearfix">
+              <div class="fb-fl"><span>起送￥20</span><span>配送￥3</span></div>
+              <div class="fb-fr"><span>10分钟</span><span>300m</span></div>
+            </div>
+            <div class="discount">
+              <div class="discount_j">满30减5</div>
+              <div class="discount_t">【5折】香酥鸡排限时抢购</div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="shop_group_item">
+        <a href="">
+          <div class="shop_state shop_state_ed"></div>
+          <div class="img"><img src="images/ic_coupon_2.png" alt=""></div>
+          <div class="text">
+            <div class="shop_name">正新鸡排（中新店）</div>
+            <div class="shop_nums">销量325份</div>
+            <div class="shop_decs fb-clearfix">
+              <div class="fb-fl"><span>起送￥20</span><span>配送￥3</span></div>
+              <div class="fb-fr"><span>10分钟</span><span>300m</span></div>
+            </div>
+            <div class="discount">
+              <div class="discount_j">满30减5</div>
+              <div class="discount_t">【5折】香酥鸡排限时抢购</div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="shop_group_item">
+        <a href="">
+          <div class="shop_state shop_state_ing"></div>
+          <div class="img"><img src="images/ic_coupon_2.png" alt=""></div>
+          <div class="text">
+            <div class="shop_name">正新鸡排（中新店）</div>
+            <div class="shop_nums">销量325份</div>
+            <div class="shop_decs fb-clearfix">
+              <div class="fb-fl"><span>起送￥20</span><span>配送￥3</span></div>
+              <div class="fb-fr"><span>10分钟</span><span>300m</span></div>
+            </div>
+            <div class="discount">
+              <div class="discount_j">满30减5</div>
+              <div class="discount_t">【5折】香酥鸡排限时抢购</div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="shop_group_item">
+        <a href="">
+          <div class="shop_state shop_state_ing"></div>
+          <div class="img"><img src="images/ic_coupon_2.png" alt=""></div>
+          <div class="text">
+            <div class="shop_name">正新鸡排（中新店）</div>
+            <div class="shop_nums">销量325份</div>
+            <div class="shop_decs fb-clearfix">
+              <div class="fb-fl"><span>起送￥20</span><span>配送￥3</span></div>
+              <div class="fb-fr"><span>10分钟</span><span>300m</span></div>
+            </div>
+            <div class="discount">
+              <div class="discount_j">满30减5</div>
+              <div class="discount_t">【5折】香酥鸡排限时抢购</div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="shop_group_item">
+        <a href="">
+          <div class="shop_state shop_state_ed"></div>
+          <div class="img"><img src="images/ic_coupon_2.png" alt=""></div>
+          <div class="text">
+            <div class="shop_name">正新鸡排（中新店）</div>
+            <div class="shop_nums">销量325份</div>
+            <div class="shop_decs fb-clearfix">
+              <div class="fb-fl"><span>起送￥20</span><span>配送￥3</span></div>
+              <div class="fb-fr"><span>10分钟</span><span>300m</span></div>
+            </div>
+            <div class="discount">
+              <div class="discount_j">满30减5</div>
+              <div class="discount_t">【5折】香酥鸡排限时抢购</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+    <div class="weui-loadmore loadmoreing">
+      <i class="weui-loading"></i>
+      <span class="weui-loadmore__tips">正在加载中</span>
+    </div>
+    <div class="weui-loadmore weui-loadmore_line loadmored">
+      <span class="weui-loadmore__tips">已经到底了</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+<script>
+  $("#searchInput").click(function(){
+    $(this).focus()
+  })
+  $("#searchInput").trigger("click")
+  $("#searchCancel").on("click",function(){
+    $(".weui-search-bar__form").submit();
+  })
+//  滚动
+
+    var loading = false;  //状态标记
+    var page = 0;
+    $(document.body).infinite(50).on("infinite", function() {
+      if(loading) return;
+      page++;
+      loading = true;
+      setTimeout(function() {
+        $(".shop_group_list").append(`<div class="shop_group_item">
+        <a href="">
+          <div class="shop_state shop_state_ing"></div>
+          <div class="img"><img src="images/ic_coupon_2.png" alt=""></div>
+          <div class="text">
+            <div class="shop_name">正新鸡排（中新店）</div>
+            <div class="shop_nums">销量325份</div>
+            <div class="shop_decs fb-clearfix">
+              <div class="fb-fl"><span>起送￥20</span><span>配送￥3</span></div>
+              <div class="fb-fr"><span>10分钟</span><span>300m</span></div>
+            </div>
+            <div class="discount">
+              <div class="discount_j">满30减5</div>
+              <div class="discount_t">【5折】香酥鸡排限时抢购</div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="shop_group_item">
+        <a href="">
+          <div class="shop_state shop_state_ed"></div>
+          <div class="img"><img src="images/ic_coupon_2.png" alt=""></div>
+          <div class="text">
+            <div class="shop_name">正新鸡排（中新店）</div>
+            <div class="shop_nums">销量325份</div>
+            <div class="shop_decs fb-clearfix">
+              <div class="fb-fl"><span>起送￥20</span><span>配送￥3</span></div>
+              <div class="fb-fr"><span>10分钟</span><span>300m</span></div>
+            </div>
+            <div class="discount">
+              <div class="discount_j">满30减5</div>
+              <div class="discount_t">【5折】香酥鸡排限时抢购</div>
+            </div>
+          </div>
+        </a>
+      </div>`);
+        if(page == 2){
+          $(document.body).destroyInfinite();
+          $(".loadmoreing").hide();
+          $(".loadmored").show()
+        }else{
+          loading = false;
+        }
+
+      }, 1500);   //模拟延迟
+    });
+
+
+</script>
