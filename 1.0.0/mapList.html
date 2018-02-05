@@ -44,40 +44,52 @@
       请先设置收货地址
     </div>
     <ul>
-      <li class="clearfix">
-        <div class="orderDetail_address">
-          <div class="orderDetail_address_con">
-            <p><span>王小二</span>13632100000</p>
-            <p>广州市增城区中新镇风光路001号</p>
-          </div>
-        </div>
-        <div class="map_delete"></div>
-      </li>
       <li class="clearfix active">
-        <div class="orderDetail_address">
-          <div class="orderDetail_address_con">
-            <p><span>王小二</span>13632100000</p>
-            <p>广州市增城区中新镇风光路001号</p>
+        <div class="map_default"></div>
+        <a href="">
+          <div class="orderDetail_address">
+            <div class="orderDetail_address_con">
+              <p><span>王小二</span>13632100000</p>
+              <p>广州市增城区中新镇风光路001号</p>
+            </div>
           </div>
-        </div>
+        </a>
         <div class="map_delete"></div>
       </li>
       <li class="clearfix">
-        <div class="orderDetail_address">
-          <div class="orderDetail_address_con">
-            <p><span>王小二</span>13632100000</p>
-            <p>广州市增城区中新镇风光路001号</p>
+        <div class="map_default"></div>
+        <a href="">
+          <div class="orderDetail_address">
+            <div class="orderDetail_address_con">
+              <p><span>王小二</span>13632100000</p>
+              <p>广州市增城区中新镇风光路001号</p>
+            </div>
           </div>
-        </div>
+        </a>
         <div class="map_delete"></div>
       </li>
       <li class="clearfix">
-        <div class="orderDetail_address">
-          <div class="orderDetail_address_con">
-            <p><span>王小二</span>13632100000</p>
-            <p>广州市增城区中新镇风光路001号</p>
+        <div class="map_default"></div>
+        <a href="">
+          <div class="orderDetail_address">
+            <div class="orderDetail_address_con">
+              <p><span>王小二</span>13632100000</p>
+              <p>广州市增城区中新镇风光路001号</p>
+            </div>
           </div>
-        </div>
+        </a>
+        <div class="map_delete"></div>
+      </li>
+      <li class="clearfix">
+        <div class="map_default"></div>
+        <a href="">
+          <div class="orderDetail_address">
+            <div class="orderDetail_address_con">
+              <p><span>王小二</span>13632100000</p>
+              <p>广州市增城区中新镇风光路001号</p>
+            </div>
+          </div>
+        </a>
         <div class="map_delete"></div>
       </li>
     </ul>
@@ -88,9 +100,9 @@
 </html>
 
 <script>
-  $(".shopMap .orderDetail_address").on("click",function(){
-    var i = $(this).index(".shopMap .orderDetail_address");
-    $(".shopMap .orderDetail_address").eq(i).parents("li").addClass("active").siblings("li").removeClass("active");
+  $(".shopMap .map_default").on("click",function(){
+    var i = $(this).index(".shopMap .map_default");
+    $(this).parents("li").addClass("active").siblings("li").removeClass("active");
   })
   $(".map_delete").on("click",function(){
     var that = $(this);

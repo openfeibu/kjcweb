@@ -1850,6 +1850,13 @@ footer ul li.active:nth-of-type(3) {
   top: 0;
   background: url("../images/ic_address_deleted.png") no-repeat right center / 0.4rem 0.4rem;
 }
+.shop_map ul li .map_default {
+  width: 0.5rem ;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 .shop_map form .shopMap_form {
   background: #ffffff;
 }
