@@ -28,7 +28,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 .fb-mask{
     width:100%;
     height:100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.7);
     position: fixed;
     top:0;
     left:0;
@@ -40,7 +40,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
     width:0px;
 }
 
-.bigloading{width: 100%;height: 100%;position: fixed;z-index:998;background:rgba(0,0,0,0.7) url("../images/ic_ingredients.png") no-repeat center;top:0;left:0;background-size:2rem auto;}
+.bigloading{width: 100%;height: 100%;position: fixed;z-index:998;background:rgba(0,0,0,0.7) url("../images/ic_ingredients.png") no-repeat center;top:0;left:0;background-size:2rem auto;display:none;}
 .box-shadow{
   -webkit-box-shadow: 1px 1px 5px #b9b8b8;
   -moz-box-shadow: 1px 1px 5px #b9b8b8;

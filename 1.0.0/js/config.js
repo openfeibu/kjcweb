@@ -12,15 +12,15 @@
   doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
 
-//$(function(){
-//    var u = navigator.userAgent;
-//    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-//    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-//    if(isAndroid){
-//
-//    }
-//})
-//
+$(function(){
+    var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    if(isAndroid){
+        $(".mine_header,.shopList .weui-navbar").css("background","#393a3f");
+    }
+})
+
 
 var config = {
    apiUrl : "http://txhapi.feibu.info/"
@@ -35,7 +35,7 @@ var config = {
 
 
 //微信注入
-function fb_config(){
+function fb_config(func){
    $.getJSON(locahost +'wechat/getConfig',{"url":location.href},function(data) {
         if(data.code == 200){
           wx.config({
@@ -46,6 +46,9 @@ function fb_config(){
           signature: data.data.signature,// 必填，签名，见附录1
           jsApiList: ["onMenuShareAppMessage","onMenuShareTimeline","openAddress","scanQRCode"],// 必填，需要使用的JS接口列表，所有JS接口列表见附录2
           // url:decodeURIComponent(data.data.url)
+          if(func){
+              func();
+          }
         });
       }
     })

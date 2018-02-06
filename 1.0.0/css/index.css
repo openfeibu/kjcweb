@@ -1907,3 +1907,157 @@ footer ul li.active:nth-of-type(3) {
   font-size: 0.28rem;
   border-radius: 0.05rem;
 }
+.getCoupon {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+}
+.getCoupon a {
+  width: 6.34rem;
+  height: 8.37rem;
+  margin: 10% auto;
+  position: relative;
+}
+.getCoupon a img {
+  width: 100%;
+  height: 100%;
+}
+.getCoupon .close {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: url("../images/ic_home_coupon_close.png") no-repeat center / 100% 100%;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+}
+.getCoupon .close.active {
+  opacity: 1;
+  top: 85%;
+}
+.contact {
+  background: #ff3156;
+}
+.contact .contact_box {
+  width: 6.9rem;
+  height: 9.85rem;
+  border-radius: 5px;
+  background: #fff;
+  margin: 0 auto;
+  position: relative;
+  top: 0.6rem;
+  overflow: hidden;
+}
+.contact .contact_box .code {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px #999;
+  margin: 1.2rem auto 0 auto;
+}
+.contact .contact_box .code img {
+  width: 100%;
+  height: 100%;
+}
+.contact .contact_box .code_text {
+  text-align: center;
+  line-height: 0.45rem;
+  margin: 0.4rem 0;
+}
+.contact .contact_box .code_text i {
+  height: 0.45rem;
+  margin-right: 0.1rem;
+}
+.contact .contact_box .code_text i img {
+  height: 100%;
+}
+.contact .contact_box .code_text span {
+  color: #777;
+  font-size: 0.4rem;
+  font-weight: bold;
+}
+.contact .contact_box .tell_text {
+  text-align: center;
+  line-height: 0.45rem;
+  margin: 1rem 0 0 0 ;
+}
+.contact .contact_box .tell_text i {
+  height: 0.45rem;
+  margin-right: 0.1rem;
+}
+.contact .contact_box .tell_text i img {
+  height: 100%;
+}
+.contact .contact_box .tell_text span {
+  color: #777;
+  font-size: 0.4rem;
+  font-weight: bold;
+}
+.contact .contact_box .tell_button {
+  width: 2.29rem;
+  height: 1.08rem;
+  background: url("../images/ic_contactcustomer.png") no-repeat center / 100% 100%;
+  margin: 0.4rem auto;
+}
+.about .about_logo {
+  width: 1.8rem;
+  height: 2rem;
+  padding-top: 1.6rem;
+  margin: 0 auto;
+}
+.about .about_logo img {
+  width: 100%;
+  height: 100%;
+}
+.about .about_name {
+  text-align: center;
+  font-size: 0.46rem;
+  color: #2e2e2e;
+  padding: 0.4rem 0 0.2rem 0;
+}
+.about .about_con {
+  text-align: center;
+  font-size: 0.32rem;
+  color: #999;
+}
+.about .about_copy {
+  width: 100%;
+  position: absolute;
+  bottom: 0.4rem;
+  left: 0;
+}
+.about .about_copy .about_href {
+  text-align: center;
+  position: relative;
+  height: 0.26rem;
+}
+.about .about_copy .about_href:after {
+  content: '';
+  width: 2px;
+  height: 0.26rem;
+  background: #bbb;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+.about .about_copy .about_href a {
+  color: #ff3156;
+  font-size: 0.28rem;
+  padding: 0 10px;
+  height: 0.26rem;
+  line-height: 0.26rem;
+  vertical-align: top;
+}
+.about .about_copy p {
+  padding: 0.25rem 0;
+  text-align: center;
+  font-size: 0.22rem;
+  color: #999;
+}
+.shopCollection .shop_group {
+  margin: 0;
+}
