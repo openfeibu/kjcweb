@@ -64,19 +64,21 @@
         return null;
     };
     //全屏加载动画
-    fbFun.loading = function(options) {
-        var defaults = {
-            flag: true,
-        };
-        var param = $.extend(defaults, options || {});
-        if (param.flag) {
-            //增加动画
+    fbFun.loading = function() {
+        //增加动画
+        $(".bigloading").remove();
+        $("body").append('<div class="bigloading"></div>');
+        setTimeout(function(){
+            $(".bigloading").fadeIn(100);
+        },1)
+
+    };
+
+    fbFun.closeLoading = function() {
+        $(".bigloading").fadeOut(100);
+        setTimeout(function(){
             $(".bigloading").remove();
-            $("body").append('<div class="bigloading"></div>');
-        } else {
-            //删除动画
-            $(".bigloading").remove();
-        }
+        },100)
     };
     //获取字符串长度（汉字算1个字符，字母数字算半个）
     fbFun.getByteLen = function(options) {
@@ -114,8 +116,26 @@
             $(".fb-mask").remove();
         }
     }
-
-        window.$F = window.fbFun = fbFun;
+    fbFun.getCoupon = function(href){
+        var dom = '  <div class="getCoupon fb-position-fixed">\
+                    <a href="'+href+'"><img src="images/coupon_popup.png" alt=""></a>\
+                    <div class="close fb-position-absolute transition" onclick="$F.closeGetCoupon()">\
+                    </div>\
+                    </div>';
+        this.fbMask(true);
+        $('body').append(dom);
+       setTimeout(function(){
+           $('.getCoupon .close').addClass("active")
+       },200)
+    }
+    fbFun.closeGetCoupon = function(){
+        this.fbMask(false);
+        $('.getCoupon ').fadeOut(200);
+        setTimeout(function () {
+            $('.getCoupon ').remove();
+        },200)
+    }
+    window.$F = window.fbFun = fbFun;
 })(window, $);
 //返回上一页
 function returnUp() {
