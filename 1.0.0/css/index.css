@@ -2061,3 +2061,12 @@ footer ul li.active:nth-of-type(3) {
 .shopCollection .shop_group {
   margin: 0;
 }
+.agreement {
+  padding: 0.3rem;
+}
+.agreement p {
+  margin-bottom: 0.3rem;
+  color: #777;
+  fotn-size: 0.32rem;
+  line-height: 0.42rem;
+}
